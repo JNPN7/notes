@@ -1,2 +1,3 @@
-# notes
-Notes
+# Notes
+
+Notes for future use
