@@ -24,10 +24,13 @@ The data used for this model is acquired from CICIDS-2017 dataset. The normal tr
 - Conversion of 1D data into 2D images:
 	Using the algorithm(link) descibed above the 1D data is conveted into 2D image of dimension of $9 \times 9$.
 - Increasing dimension of images by rotation and concatination:
-	The 2D image's dimension is incresed from $9 \times 9$ to $18 \times 18$. The $9 \times 9$ images is rotated by 90 degrees then concatenated to original image making dimension $9 \times 18$. Another two rotated instance of image, one by 180 degress and another by 270 degress was concatenated giving us another $9 \times 18$ image. Then, the two image of dimention $9 \times 18$ is concatenated yeilding $18 \times 18$ image
+	The 2D image's dimension is incresed from $9 \times 9$ to $18 \times 18$. The $9 \times 9$ images is rotated by 90 degrees then concatenated to original image making dimension $9 \times 18$. Another two rotated instance of image, one by 180 degress and another by 270 degress was concatenated giving us another $9 \times 18$ image. Then, the two image of dimention $9 \times 18$ is concatenated yeilding $18 \times 18$ image.
+	
 $$ I_{18 \times 18} = I1_{9 \times 18}\ +\ I2_{9 \times 18}$$
 $$ where, I1_{9\times18} = OriginalImg_{9\times9}\ +\ Rotaion_{90^\degree}(OriginalImg_{9\times9})$$
+
 $$ I2_{9\times18} = Roataion_{180^\degree}(OriginalImg_{9\times9})\ +\ Rotaion_{270^\degree}(OriginalImg_{9\times9})$$
+
 - Increasing dimension by using padding:
 	For proper model creation the dimension of image is increased from $18 \times 18$ to $19  \times 19$. The padding across the bottom border and right border is performed.
 
@@ -43,9 +46,8 @@ If x is the input image 'x' then output of encoder is y and output of decoder is
 $$
 x = A_{dec}(y)
 $$
-$$
-where, y = A_{enc}(x)
-$$
+
+$$ where, y = A_{enc}(x) $$
 > TODO  Add image At begining or end need to decide
 
 
@@ -54,12 +56,15 @@ Only the normal Traffic data is used for training purposes. Total dataset consis
 Total 300 TODO CHANGE Epoch was carried out in training. The optimizer used was ADAM with learining rate 0.001 and decay $1 \times 10^{-5}$. 
 - Loss calculation:
 	The difference of the original image and reconstructed image is calculated which gives error of each pixel. 
+	
 $$ Er_{19 \times 19} = OriginalImg_{19 \times 19} - ReconstructedImg_{19 \times 19}$$ 
 	The two loss function?? root of sum of squared error and sum of absoute error is used.
 	1. Root of Sum of Squared error
 		 It is calculated by squaring the error and adding all the error and taking the square root.
+		 
 		 $$ e_{rse} = \sqrt{\sum_{i=0}^N \sum_{j=0}^M {Er_{i,j}^2}}\quad, where\ N=19\ and\ M=19 $$
 	1. Sum of Absolute error
 		 It is calculated by taking absoute of the error and adding the error.
+		 
 		 $$ e_{sae} = \sum_{i=0}^N \sum_{j=0}^M {|Er_{i,j}|}\quad, where\ N=19\ and\ M=19 $$
    
