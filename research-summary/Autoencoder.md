@@ -57,11 +57,10 @@ Total 300 TODO CHANGE Epoch was carried out in training. The optimizer used was 
 	
 $$Er_{19 \times 19} = OriginalImg_{19 \times 19} - ReconstructedImg_{19 \times 19}$$ 
 	The two loss function?? root of sum of squared error and sum of absoute error is used.
-	1. Root of Sum of Squared error
-		 It is calculated by squaring the error and adding all the error and taking the square root.
-		 $$e_{rse} = \sqrt{\sum_{i=0}^N \sum_{j=0}^M {Er_{i,j}^2}}\quad, where\ N=19\ and\ M=19$$
-	2. Sum of Absolute error
-		 It is calculated by taking absoute of the error and adding the error.
-		 
-		 $$e_{sae} = \sum_{i=0}^N \sum_{j=0}^M {|Er_{i,j}|}\quad, where\ N=19\ and\ M=19$$
+1. Root of Sum of Squared error
+	It is calculated by squaring the error and adding all the error and taking the square root.
+	$$e_{rse} = \sqrt{\sum_{i=0}^N \sum_{j=0}^M {Er_{i,j}^2}}\quad, where\ N=19\ and\ M=19$$
+2. Sum of Absolute error
+	It is calculated by taking absoute of the error and adding the error.
+	$$e_{sae} = \sum_{i=0}^N \sum_{j=0}^M {|Er_{i,j}|}\quad, where\ N=19\ and\ M=19$$
    
