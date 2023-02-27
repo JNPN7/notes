@@ -8,11 +8,7 @@ The rank matrix is calculated which is of dimension $N \times N$, which is dista
 For optimization of ranks, the ideal rank matrix is taken, which is of dimesion $N \times N$. And the intensity of a pixel is given by distance between  i and j where i is row index and j is column index. So, ideally the diagonal is zero and the intensity increased with moving towards the corners such that corners is of highest intensity (pitch black).
 
 For optimization, the rank matrx is compared with ideal rank matrix and swaping of colmuns(rank) is performed if needed. The loss is calculated as:
-<<<<<<< HEAD
-$$ loss(R, Q) = \sum_{i=1}^N \sum_{j=1}^i abs(r_{i,j} - q_{i,j}) $$
-=======
 $$ loss(R, Q) = \sum_{i=1}^N \sum_{j=1}^i |r_{i,j} - q_{i,j}| $$
->>>>>>> 62251cc (Additional notes addes)
 $$ where, r = rank\ matrix\ and\ q\ = ideal\ rank\ matrix$$
 
 According to loss the swap is performed i.e. swap of columns causing lowest loss. 
