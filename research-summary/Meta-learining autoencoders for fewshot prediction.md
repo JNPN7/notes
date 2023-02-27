@@ -33,5 +33,5 @@ $$ y = h_\alpha(x) $$
 -  Architecture of MeLA is defined by three vector-valued functions $f_\theta, g_\gamma \text{ and } m_\mu$, defined by parameterized vectors $\theta, \gamma, \mu$
 - TODO not understood need pen and paper.
 
-![alt mela-architecture](mela-archt.png)
+![alt mela-architecture](/assets/research/mela-archt.png)
 

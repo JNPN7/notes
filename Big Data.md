@@ -25,7 +25,7 @@
 6. Veracity : uncertainity | correctness due to ambiguity, inconsistency
 
 ### Usecase
-![alt usecare of big data](big_data_usecase.png)
+![alt usecare of big data](/assets/big-data/big_data_usecase.png)
 
 ### Challenges of Big data
 - Store the sheer size of data
@@ -79,17 +79,17 @@ Hadoop supports 3 configurations:
 2. **MapReduce Framework**: Compute in distributed environment
 
 #### Submitting and executing the jobs
-![alt submitting and executing jobs in hadoop](submitting_executing_job.png)
+![alt submitting and executing jobs in hadoop](./assets/big-data/submitting_executing_job.png)
 
 >Size of a block: Multiple of 64MB, minimum being 64MB
 
 ### Hadoop Hardware
-![alt hadoop hardware](hadoop_hardware_rack.png)
+![alt hadoop hardware](/assets/big-data/hadoop_hardware_rack.png)
 
 >Default replication factor: 3
 
 ### Architecture of Hadoop
-![alt architeture of hadoop](hadoop_architecture.png)
+![alt architeture of hadoop](/assets/big-data/hadoop_architecture.png)
 
 ### Replica Placement Strategy
 - Replica placement are rack aware. Namenode uses the network location when determining where to place block replicas.

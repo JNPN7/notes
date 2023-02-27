@@ -48,7 +48,7 @@ def gcd(a, b):
     return a
 ```
 
-![alt euclidean algorithm](euclidean_algorithm.png)
+![alt euclidean algorithm](/assets/cryptography/euclidean_algorithm.png)
 
 
 ## MODULAR ARITHMETIC

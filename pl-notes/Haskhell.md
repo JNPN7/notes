@@ -280,9 +280,9 @@ rev = foldl (\acc x -> x : acc) []
 rev = foldl (flip (:)) []
 ```
 
-![alt foldr vs foldl](foldl_vs_foldr.png)
-![alt foldr](foldr.png)
-![alt foldr](foldl.png)
+![alt foldr vs foldl](/assets/haskell/foldl_vs_foldr.png)
+![alt foldr](/assets/haskell/foldr.png)
+![alt foldr](/assets/haskell/foldl.png)
 #### Datatypes
 ```haskell
 data Name =

@@ -60,7 +60,7 @@ Divides these services into five categories:
 	* Security Recovery
 
 #### Relationship between security services and mechanisms:
-![alt relationship between security services and mechanisms](relationship-between-services-and-mechanisms.jpg)
+![alt relationship between security services and mechanisms](/assets/cryptography/relationship-between-services-and-mechanisms.jpg)
 
 ### Fundamental Security Design Principles
 * Economy of mechanism
