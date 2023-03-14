@@ -1,4 +1,4 @@
-xs# Functional Programming
+# Functional Programming
 * Pure (mathematical) function
 * Immutable data
 * Declarative

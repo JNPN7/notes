@@ -50,8 +50,25 @@ The main contributions of this proposed method are as follows:
 # Implementation
 
 ### Training Procedure : Training algorithm
-##### Requirement
-
+##### Requirement / Input:
+Training set $D={(x_1, y_1), (x_2, y_2), ... , (x_N, y_N)}$ where $y \in {1, 2, ... k}$ and x is images which is obtained from pre-processing i.e. convering 1D into 2D image
+##### Ensure / Output:
+The loss $J$ calculation for a training episode.
+- for $i$ in $(1, 2, ..., k)$ do
+	- $s\ <-\ RandomSample(D, N_s)\ where\ y = i,\ and\ N_s\ is\ number\ of\ samples(shot)$ {Select support set}
+	- $q\ <-\ RandomSample(D\\S_k, N_q) where y=i,\ and\ N_q\ is\ number of\ query$ {Select query set}
+	- $S_k\ <-\ append(s)$ {Append all support set into one variable}
+	- $Q_k\ <-\ append(q)$ {Append all query set into one variable}
+ - end for
+ - $J\ <-\ 0$ {Initialize loss}
+ - for $i$ in $(1, 2, ..., k)$ do
+	 - for $(x_s, x_q)$ in ($S_k, Q_k$) where $y=i$
+		 - $x'_q = encoder(x_q)$
+		 - $J\ <-\ J + dist(x_s, x'_q)$ {Update loss}
+	 - end for
+ - end for
+ Where,
+ dist is ecludian or manhattan [Need to write mathematical expression]
 
 
 # References
