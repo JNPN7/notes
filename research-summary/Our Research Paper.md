@@ -84,7 +84,7 @@ The critical idea of the FSL model is based on prior knowledge to constrain the 
 
 Typlically in Fewshot learning N-way K-shot learning scheme is used. “N-way” indicates
 that there are “N” numbers of novel categories on which a pre-trained model needs to generalize over. “K-shot” defines the number of labeled samples available in the the support set for each of the “N” novel classes. The support set consists of a few labeled samples per novel category of data, which a pre-trained model will use to generalize on the new classes. The set of provided examples for comparing the metric is called the support set $S$. This support set includes KN labeled samples.
-$$ S = (x_1 , y_1 ), (x_2 , y_2 ), .....(x_N , y_N )\  where\ y_i \in {1, 2, ... k} $$
+$$S = (x_1 , y_1 ), (x_2 , y_2 ), .....(x_N , y_N )\  where\ y_i \in {1, 2, ... k}$$
 The query set consists of the samples from the new and old categories of data on which the model needs to generalize using previous knowledge and information gained from the support set.
 
 
@@ -94,11 +94,11 @@ How multiclass
 
 ## Datasets
 1. CICIDS-2017 dataset
-CICIDS2017 dataset contains benign and the most common attacks, which resembles the true-real world data. The dataset was collected by Canadian Institute of Cybersecurity (CIC), University of Brunswick (UNB). The dataset was created using CICFlowMeter with labeled flow based on the time stamp, source and destination IPs, source and destination ports, protocols and attack. The implemented attacks include Brute Force FTP, Brute Force SSH, DoS, Heartbleed, Web Attack, Infiltration, Botnet and DDoS.
+	CICIDS2017 dataset contains benign and the most common attacks, which resembles the true-real world data. The dataset was collected by Canadian Institute of Cybersecurity (CIC), University of Brunswick (UNB). The dataset was created using CICFlowMeter with labeled flow based on the time stamp, source and destination IPs, source and destination ports, protocols and attack. The implemented attacks include Brute Force FTP, Brute Force SSH, DoS, Heartbleed, Web Attack, Infiltration, Botnet and DDoS.
 
-The dataset consistes of abstract behavior of 25 users based on the HTTP, HTTPS, FTP, SSH, and email protocols. The dataset consists of 77 features and a label. Table below presents a summary of overall traffic features of each network connection vector within the dataset.
+	The dataset consistes of abstract behavior of 25 users based on the HTTP, HTTPS, FTP, SSH, and email protocols. The dataset consists of 77 features and a label. Table below presents a summary of overall traffic features of each network connection vector within the dataset.
 
-Furthermore, the dataset contains 14 attacks and normal traffic making 15 categories. Following are the categories and the number of each categories:
+	Furthermore, the dataset contains 14 attacks and normal traffic making 15 categories. Following are the categories and the number of each categories:
 | Label             | Number of instance   | Percentage |
 |-------------------|----------------------|------------|
 | Benign            | 2273097              | 80.3004%   |
