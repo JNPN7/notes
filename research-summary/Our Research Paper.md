@@ -4,17 +4,17 @@
 - [ ] Abstract
 - [ ] Introduction
 - [ ] Relevant work
-	- [*] Few shot learning
+	- [x] Few shot learning
 	- [ ] Loss function
 	- [ ] Embeding function
 	- [ ] DNN 
 	- [ ] CNN
 - [ ] Implementation
 	- [ ] Proposed Model
-		- [*] Algorithm
-	- [ ] Dataset
+		- [x] Algorithm
+	- [x] Dataset
 	- [ ] Data preprocessing
-		- [*] IGTD
+		- [x] IGTD
 	- [ ] Evaluation metrics
 	- [ ] Experiments
 - [ ] Results and Comparision
