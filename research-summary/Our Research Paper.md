@@ -99,6 +99,7 @@ How multiclass
 	The dataset consistes of abstract behavior of 25 users based on the HTTP, HTTPS, FTP, SSH, and email protocols. The dataset consists of 77 features and a label. Table below presents a summary of overall traffic features of each network connection vector within the dataset.
 
 	Furthermore, the dataset contains 14 attacks and normal traffic making 15 categories. Following are the categories and the number of each categories:
+	
 | Label             | Number of instance   | Percentage |
 |-------------------|----------------------|------------|
 | Benign            | 2273097              | 80.3004%   |
