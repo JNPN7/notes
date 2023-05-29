@@ -57,7 +57,7 @@ Training set $D={(x_1, y_1), (x_2, y_2), ... , (x_N, y_N)}$ where $y \in {1, 2, 
 The loss $J$ calculation for a training episode.
 - for $i$ in $(1, 2, ..., k)$ do
 	- $s\ <-\ RandomSample(D, N_s)\ where\ y = i,\ and\ N_s\ is\ number\ of\ samples(shot)$ {Select support set}
-	- $q\ <-\ RandomSample(D\\S_k, N_q) where y=i,\ and\ N_q\ is\ number of\ query$ {Select query set}
+	- $q\ <-\ RandomSample(D\backslash S_k, N_q) where y=i,\ and\ N_q\ is\ number of\ query$ {Select query set}
 	- $S_k\ <-\ append(s)$ {Append all support set into one variable}
 	- $Q_k\ <-\ append(q)$ {Append all query set into one variable}
  - end for

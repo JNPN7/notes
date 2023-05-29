@@ -46,21 +46,21 @@ If x is the input image 'x' then output of encoder is y and output of decoder is
 $$x = A_{dec}(y)$$
 
 $$where, y = A_{enc}(x)$$
-> TODO  Add image At begining or end need to decide
+> TODO  Add image At beginning or end need to decide
 
 
 ### Training Formulation // Tense to be used ??
-Only the normal Traffic data is used for training purposes. Total dataset consists of TODO XX data in which normal traffic data is TODO XX. The 70-30 split was performed, 70 for training and 30 for testing. Again for validation 80-20 split was performed in training dataset.
-Total 300 TODO CHANGE Epoch was carried out in training. The optimizer used was ADAM with learining rate 0.001 and decay $1 \times 10^{-5}$. 
+Only the normal Traffic data is used for training purposes. Total datasets consists of TODO XX data in which normal traffic data is TODO XX. The 70-30 split was performed, 70 for training and 30 for testing. Again for validation 80-20 split was performed in training datasets.
+Total 300 TODO CHANGE Epoch was carried out in training. The optimizer used was ADAM with learning rate 0.001 and decay $1 \times 10^{-5}$. 
 - Loss calculation:
 	The difference of the original image and reconstructed image is calculated which gives error of each pixel. 
 	
 $$Er_{19 \times 19} = OriginalImg_{19 \times 19} - ReconstructedImg_{19 \times 19}$$ 
-	The two loss function?? root of sum of squared error and sum of absoute error is used.
+	The two loss function?? root of sum of squared error and sum of absolute error is used.
 1. Root of Sum of Squared error
 	It is calculated by squaring the error and adding all the error and taking the square root.
 	$$e_{rse} = \sqrt{\sum_{i=0}^N \sum_{j=0}^M {Er_{i,j}^2}}\quad, where\ N=19\ and\ M=19$$
 2. Sum of Absolute error
-	It is calculated by taking absoute of the error and adding the error.
+	It is calculated by taking absolute of the error and adding the error.
 	$$e_{sae} = \sum_{i=0}^N \sum_{j=0}^M {|Er_{i,j}|}\quad, where\ N=19\ and\ M=19$$
    

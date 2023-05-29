@@ -745,3 +745,11 @@ flip parseMaybe result $ \obj -> do
         name <- obj .: "name"
         Just (name ++ " : " ++ show (age))
 ```
+
+## Debugging inside monad
+```haskell
+getVal :: Integer
+getVal=Debug.trace "Returning integer" 32
+
+Debug.traceM "someerror"
+```
